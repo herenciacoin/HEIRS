@@ -1,5 +1,5 @@
 # HERENCIA
-Converting cryptocurrency Usecase development into financial and Tradeable digital Equity.
+Cryto and asset inheritance deployed on the blockchain. Immutable Will Transfer using Blockchain technology.
 
 
 <h1>HERENCIA COIN repository</h1>
