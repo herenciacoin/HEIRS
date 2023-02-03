@@ -3,8 +3,8 @@ Converting cryptocurrency Usecase development into financial and Tradeable digit
 
 
 <h1>HERENCIA COIN repository</h1>
-<p> HERENCIA is a digital crypto currency based on blockchain technology to assess and convert coin projects usecases into funded and tradeable equity.<p>
-<p> Herencia utilizes a Proof of Stake (PoS) consensus system algorithm, allowing all owners of HEIRS to participate in earning block rewards while securing as well as to run Masternodes thereby generating passive income.<p>
+<p> Herencia platform implements the placement of your crypto assets as a Last Will and Testament on the blockchain.<p>
+<p> Herencia utilizes a Proof of Stake (PoS) consensus system algorithm, allowing all owners of HEIRS to participate in earning block rewards while securing the network and operating Masternodes thereby generating passive income.<p>
 
   
   
