@@ -1,5 +1,5 @@
 # HERENCIA
-Cryto and asset inheritance deployed on the blockchain. Immutable Will Transfer using Blockchain technology.
+Immutable Iheritance/Will Transfer using Blockchain technology.
 
 
 <h1>HERENCIA COIN repository</h1>
