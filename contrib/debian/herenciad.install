@@ -1,0 +1,3 @@
+usr/local/bin/herenciad usr/bin
+usr/local/bin/herencia-cli usr/bin
+debian/examples/herencia.conf etc/herencia

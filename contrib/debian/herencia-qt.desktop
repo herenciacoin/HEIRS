@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Name=HERENCIA
+Comment= HEIRS P2P Cryptocurrency
+Comment[fr]= HEIRS, monnaie virtuelle cryptographique pair à pair
+Comment[tr]= HEIRS, eşten eşe kriptografik sanal para birimi
+Exec=herencia-qt %u
+Terminal=false
+Type=Application
+Icon=herencia128
+MimeType=x-scheme-handler/herencia;
+Categories=Office;Finance;
+StartupWMClass=HERENCIA-qt

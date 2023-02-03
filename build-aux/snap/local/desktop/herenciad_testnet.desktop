@@ -1,0 +1,15 @@
+# http://standards.freedesktop.org/desktop-entry-spec/desktop-entry-spec-1.0.html
+
+[Desktop Entry]
+Encoding=UTF-8
+Name=HERENCIA Core Daemon SNAP
+Comment=testnet
+GenericName=HERENCIA Digital Currency Daemon Client testnet network
+Exec=herencia-core.daemon-testnet %u
+Terminal=true
+Type=Application
+Icon=${SNAP}/share/pixmaps/herencia_testnet.png
+MimeType=x-scheme-handler/heirs;
+Categories=X-Office;X-Finance;
+Keywords=internet;herencia;core;wallet;daemon;testnet;snap;launchpad;crypto;digital;currency;coin;token;
+Version=1.0

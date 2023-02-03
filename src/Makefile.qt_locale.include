@@ -1,0 +1,15 @@
+QT_TS = \
+  qt/locale/herencia_de.ts \
+  qt/locale/herencia_en.ts \
+  qt/locale/herencia_en_US.ts \
+  qt/locale/herencia_es.ts \
+  qt/locale/herencia_es_ES.ts \
+  qt/locale/herencia_fr_FR.ts \
+  qt/locale/herencia_hr_HR.ts \
+  qt/locale/herencia_it.ts \
+  qt/locale/herencia_ko_KR.ts \
+  qt/locale/herencia_nl.ts \
+  qt/locale/herencia_pl.ts \
+  qt/locale/herencia_ru.ts \
+  qt/locale/herencia_tr.ts \
+  qt/locale/herencia_zh_CN.ts

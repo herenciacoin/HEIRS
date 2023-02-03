@@ -1,0 +1,8 @@
+/usr/bin/herencia-cli		--	gen_context(system_u:object_r:herencia_exec_t,s0)
+/usr/sbin/herenciad		--	gen_context(system_u:object_r:herencia_exec_t,s0)
+/usr/lib(64)?/herencia/herenciad		--	gen_context(system_u:object_r:herencia_exec_t,s0)
+
+/etc/herencia(/.*)?		gen_context(system_u:object_r:herencia_conf_t,s0)
+/var/lib/herencia(/.*)?		gen_context(system_u:object_r:herencia_var_lib_t,s0)
+
+(/var)?/run/herenciad(/.*)?   gen_context(system_u:object_r:herencia_var_run_t,s0)

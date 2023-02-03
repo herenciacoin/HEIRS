@@ -1,0 +1,6 @@
+usr/local/bin/herencia-qt usr/bin
+share/pixmaps/herencia32.xpm usr/share/pixmaps
+share/pixmaps/herencia16.xpm usr/share/pixmaps
+share/pixmaps/herencia128.png usr/share/pixmaps
+debian/herencia-qt.desktop usr/share/applications
+debian/herencia-qt.protocol usr/share/kde4/services/
