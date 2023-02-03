@@ -8,7 +8,7 @@ Immutable Inheritance/Will Transfer using Blockchain technology.
 
   
   
-<h2><strong>Specification:</strong></h2>
+<h3><strong>Specification:</strong></h3>
 <table>
 <tbody>
 <tr>
