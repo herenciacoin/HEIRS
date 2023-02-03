@@ -1,5 +1,5 @@
 # HERENCIA
-Immutable Iheritance/Will Transfer using Blockchain technology.
+Immutable Inheritance/Will Transfer using Blockchain technology.
 
 
 <h1>HERENCIA COIN repository</h1>
