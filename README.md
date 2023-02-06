@@ -24,8 +24,8 @@ Immutable Inheritance/Will Transfer using Blockchain technology.
 <td>60 Sec</td>
 </tr>
 <tr>
-<td>Maximum Supply</td>
-<td>3,000,000 HEIRS</td>
+<td>Total Supply</td>
+<td>200,000,000 HEIRS</td>
 </tr>
 <tr>
 <td>Minimum Stake Age</td>
@@ -190,12 +190,21 @@ Immutable Inheritance/Will Transfer using Blockchain technology.
 </tr>
 <tr>
 <td class="xl65" style="width: 120px; text-align: center;">3722194</td>
-<td class="xl65" style="width: 120px; text-align: center;">INFINITE</td>
+<td class="xl65" style="width: 120px; text-align: center;">-</td>
 <td class="xl65" style="width: 180px; text-align: center;">150000</td>
 <td class="xl65" style="width: 120px; text-align: center;">30</td>
 <td class="xl65" style="width: 120px; text-align: center;">24</td>
 <td class="xl66" style="width: 120px; text-align: center;">3.8</td>
 <td class="xl66" style="width: 120px; text-align: center;">2.2</td>
+</tr>
+<tr>
+<td class="xl65" style="width: 120px; text-align: center;">3722195</td>
+<td class="xl65" style="width: 120px; text-align: center;">INFINITE</td>
+<td class="xl65" style="width: 180px; text-align: center;">0</td>
+<td class="xl65" style="width: 120px; text-align: center;">0</td>
+<td class="xl65" style="width: 120px; text-align: center;">0</td>
+<td class="xl66" style="width: 120px; text-align: center;">0</td>
+<td class="xl66" style="width: 120px; text-align: center;">0</td>
 </tr>
 </tbody>
 </table>
