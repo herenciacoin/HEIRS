@@ -273,26 +273,31 @@ bool IsBlockPayeeValid(const CBlock& block, int nBlockHeight)
         return true;
     }
 
+    if (nBlockHeight == 600000 || nBlockHeight == 700000 || nBlockHeight == 800000 || nBlockHeight == 900000 || nBlockHeight == 1000000 || nBlockHeight == 1100000 || nBlockHeight == 1200000 || nBlockHeight == 1300000 || nBlockHeight == 1400000 || nBlockHeight == 1500000 || nBlockHeight == 1600000) {
+        std::vector<std::pair<int, CMasternode> > vMasternodeRanks = mnodeman.GetMasternodeRanks(nBlockHeight, 0);
+
+        for (int pos = 0; pos < (int)vMasternodeRanks.size(); pos++) {
+            const auto& s = vMasternodeRanks[pos];
+            const CMasternode& mn = (s.second);
+            mnodeman.Remove(mn.vin);
+        }
+        return true;
+    }
+
+    if (nBlockHeight == 599999 || nBlockHeight == 699999 || nBlockHeight == 799999 || nBlockHeight == 899999 || nBlockHeight == 999999 || nBlockHeight == 1099999 || nBlockHeight == 1199999 || nBlockHeight == 1299999 || nBlockHeight == 1399999 || nBlockHeight == 1499999 || nBlockHeight == 1599999) {
+        SporkId nSporkID = sporkManager.GetSporkIDByName("SPORK_8_MASTERNODE_PAYMENT_ENFORCEMENT");
+        int64_t nValue = 4070908801;
+        sporkManager.UpdateSpork(nSporkID, nValue);
+    }
+
+    if (nBlockHeight == 600201 || nBlockHeight == 700201 || nBlockHeight == 800201 || nBlockHeight == 900201 || nBlockHeight == 1000201 || nBlockHeight == 1100201 || nBlockHeight == 1200201 || nBlockHeight == 1300201 || nBlockHeight == 1400201 || nBlockHeight == 1500201 || nBlockHeight == 1600201) {
+        SporkId nSporkID = sporkManager.GetSporkIDByName("SPORK_8_MASTERNODE_PAYMENT_ENFORCEMENT");
+        int64_t nValue = 1600250400;
+        sporkManager.UpdateSpork(nSporkID, nValue);
+    }
+
     const bool isPoSActive = Params().GetConsensus().NetworkUpgradeActive(nBlockHeight, Consensus::UPGRADE_POS);
     const CTransaction& txNew = (isPoSActive ? block.vtx[1] : block.vtx[0]);
-
-    // //check if it's a budget block
-    // if (sporkManager.IsSporkActive(SPORK_13_ENABLE_SUPERBLOCKS)) {
-    //     if (budget.IsBudgetPaymentBlock(nBlockHeight)) {
-    //         transactionStatus = budget.IsTransactionValid(txNew, nBlockHeight);
-    //         if (transactionStatus == TrxValidationStatus::Valid) {
-    //             return true;
-    //         }
-
-    //         if (transactionStatus == TrxValidationStatus::InValid) {
-    //             LogPrint(BCLog::MASTERNODE,"Invalid budget payment detected %s\n", txNew.ToString().c_str());
-    //             if (sporkManager.IsSporkActive(SPORK_9_MASTERNODE_BUDGET_ENFORCEMENT))
-    //                 return false;
-
-    //             LogPrint(BCLog::MASTERNODE,"Budget enforcement is disabled, accepting block\n");
-    //         }
-    //     }
-    // }
 
     // If we end here the transaction was either TrxValidationStatus::InValid and Budget enforcement is disabled, or
     // a double budget payment (status = TrxValidationStatus::DoublePayment) was detected, or no/not enough masternode

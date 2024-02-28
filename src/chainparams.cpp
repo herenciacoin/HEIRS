@@ -79,12 +79,26 @@ static Checkpoints::MapCheckpoints mapCheckpoints =
     (6789, uint256S("0x647460a5f7cf9b5c2e9bee323a0a1ece635adde576ad121cff65330ed967ae71"))
     (8842, uint256S("0x03e7796cec354e99f24981c5ee1f648a1bbee690990cc3efc7a3d31795a32c38"))
     (8956, uint256S("0x6fb5c2797123b8315333e1c523a643c3b5b40d86477e29ef2ac001666a5e2cfb"))
+    (59870, uint256S("0x2aa51c9b3a83e93f4fdf0391e6a346aa1eb421dc1f51f87d1b11c69971fa51c1"))
+    (89542, uint256S("0x7a36627697081011215db3c9c7aa9a42c48e8c3ed3250a859f0adfd62d9e7f19"))
+    (120756, uint256S("0x9ff25b551380e502c2bdf0ed0edfc1cc22124b8a94d1b3851ea8b2696a0b799e"))
+    (180412, uint256S("0xd11441120f696a31f132b76c06c074c4c9a031da3605ce7c18f5f5b69e7e3342"))
+    (225321, uint256S("0xa1bfd2294ab0a9e1df64f040483a9f50129e48dc94e220a8ae1f97dfbc7fa5e8"))
+    (270852, uint256S("0xdf936adb4e751169add91949a33383b074f090475cc74272141b5b77b97d0d41"))
+    (305212, uint256S("0xaf8d3bcef4f375aea6054b39dc3c6e577d4e6c2623277c2f1217399e17c57fea"))
+    (352129, uint256S("0xfa311486c15ee9f39f3d55836d5b17c3c94ded1a8016f1590532fa298ecc030c"))
+    (384572, uint256S("0x111215fcbd4407bc908428556c63e5a5d74bdd9320119a45b8ce92de2528d438"))
+    (410789, uint256S("0xde949b335b910815c4fdc156c3e8718af38c199aedef64da7c688c6262e0d98b"))
+    (464236, uint256S("0x2a197a119f6be497c2c4998489a339737df71d88d0a236b9f7fd046a6655c60e"))
+    (498127, uint256S("0xd7b11690c1895a951a2ccf3731f36376933a858c4480c39f46395767fbdf220c"))
+    (512419, uint256S("0xdfc7724a39699492683d29944f306d23eeef6e68847cd3fa2967c87176b9d1eb"))
+    (556746, uint256S("0x0ea67910c84a6e51a1719193dda148aa18d17090ef546f0574cf6bf65685fb69"))
     ; 
 
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-    1675330005, // * UNIX timestamp of last checkpoint block
-    17919,      // * total number of transactions between genesis and last checkpoint
+    1709022900, // * UNIX timestamp of last checkpoint block
+    1134989,    // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the UpdateTip debug.log lines)
     2824        // * estimated number of transactions per day after checkpoint
 };

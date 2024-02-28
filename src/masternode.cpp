@@ -321,7 +321,17 @@ bool CMasternode::IsInputAssociatedWithPubkey() const
 
 CAmount CMasternode::GetMasternodeNodeCollateral(int nHeight) 
 {
-    if (nHeight >  3722194) return    0 * COIN;
+    if (nHeight >  1600000) return    1250000 * COIN;
+    if (nHeight >  1500000) return    1150000 * COIN;
+    if (nHeight >  1400000) return    1050000 * COIN;
+    if (nHeight >  1300000) return    950000 * COIN;
+    if (nHeight >  1200000) return    850000 * COIN;
+    if (nHeight >  1100000) return    750000 * COIN;
+    if (nHeight >  1000000) return    650000 * COIN;
+    if (nHeight >  900000)  return    550000 * COIN;
+    if (nHeight >  800000)  return    450000 * COIN;
+    if (nHeight >  700000)  return    350000 * COIN;
+    if (nHeight >  600000)  return    250000 * COIN;
     if (nHeight >  500000)  return    150000 * COIN;
     if (nHeight >  400000)  return    10000 * COIN;
     if (nHeight >  300000)  return    800 * COIN;
@@ -334,19 +344,23 @@ CAmount CMasternode::GetMasternodeNodeCollateral(int nHeight)
 
 CAmount CMasternode::GetBlockValue(int nHeight)
 {
-    if (nHeight > 3722194) return    0 * COIN;
-    if (nHeight > 3722193) return    30 * COIN;
-    if (nHeight > 1000000) return    50 * COIN;
-    if (nHeight >  900000) return    80 * COIN;
-    if (nHeight >  800000) return    100 * COIN;
-    if (nHeight >  700000) return    120 * COIN;
-    if (nHeight >  600000) return    130 * COIN;
+    if (nHeight > 1600000) return    1212 * COIN;
+    if (nHeight > 1500000) return    1010 * COIN;
+    if (nHeight > 1400000) return    839 * COIN;
+    if (nHeight > 1300000) return    699 * COIN;
+    if (nHeight > 1200000) return    582 * COIN;
+    if (nHeight > 1100000) return    485 * COIN;
+    if (nHeight > 1000000) return    404 * COIN;
+    if (nHeight >  900000) return    336 * COIN;
+    if (nHeight >  800000) return    280 * COIN;
+    if (nHeight >  700000) return    253 * COIN;
+    if (nHeight >  600000) return    230 * COIN;
     if (nHeight >  500000) return    150 * COIN;
     if (nHeight >  400000) return    25 * COIN;
     if (nHeight >  300000) return    1.6 * COIN;
     if (nHeight >  200000) return    1.2 * COIN;
     if (nHeight >  100000) return    1 * COIN;
-    if (nHeight >   5000) return     0.1 * COIN;
+    if (nHeight >   5000)  return    0.1 * COIN;
     if (nHeight >    1000) return    0.08 * COIN;
     if (nHeight >     500) return    1 * COIN;
     if (nHeight >       0) return    6000 * COIN;
@@ -356,42 +370,70 @@ CAmount CMasternode::GetBlockValue(int nHeight)
 
 CAmount CMasternode::GetMasternodePayment(int nHeight)
 {
-    if (nHeight > 3722194) return    0 * COIN;
-    if (nHeight > 3722193) return    24 * COIN;
-    if (nHeight > 1000000) return    40 * COIN;
-    if (nHeight >  900000) return    68 * COIN;
-    if (nHeight >  800000) return    80 * COIN;
-    if (nHeight >  700000) return    102 * COIN;
-    if (nHeight >  600000) return    91 * COIN;
-    if (nHeight >  500000) return    120 * COIN;
-    if (nHeight >  400000) return    15 * COIN;
-    if (nHeight >  300000) return    1.3 * COIN;
-    if (nHeight >  200000) return    1.02 * COIN;
-    if (nHeight >  100000) return    0.84 * COIN;
-    if (nHeight >   5000) return     0.07 * COIN;
-    if (nHeight >    1000) return    0.06 * COIN;
-    if (nHeight >     500) return    0.8 * COIN;
+    if (nHeight >  1600000) return    1030 * COIN;
+    if (nHeight >  1500300) return    910 * COIN;
+    if (nHeight >  1500000) return    0 * COIN;
+    if (nHeight >  1400300) return    739 * COIN;
+    if (nHeight >  1400000) return    0 * COIN;
+    if (nHeight >  1300300) return    599 * COIN;
+    if (nHeight >  1300000) return    0 * COIN;
+    if (nHeight >  1200300) return    482 * COIN;
+    if (nHeight >  1200000) return    0 * COIN;
+    if (nHeight >  1100300) return    385 * COIN;
+    if (nHeight >  1100000) return    0 * COIN;
+    if (nHeight >  1000300) return    304 * COIN;
+    if (nHeight >  1000000) return    0 * COIN;
+    if (nHeight >  900300)  return    236 * COIN;
+    if (nHeight >  900000)  return    0 * COIN;
+    if (nHeight >  800300)  return    180 * COIN;
+    if (nHeight >  800000)  return    0 * COIN;
+    if (nHeight >  700300)  return    158 * COIN;
+    if (nHeight >  700000)  return    0 * COIN;
+    if (nHeight >  600300)  return    150 * COIN;
+    if (nHeight >  600000)  return    0 * COIN;
+    if (nHeight >  500000)  return    120 * COIN;
+    if (nHeight >  400000)  return    15 * COIN;
+    if (nHeight >  300000)  return    1.3 * COIN;
+    if (nHeight >  200000)  return    1.02 * COIN;
+    if (nHeight >  100000)  return    0.84 * COIN;
+    if (nHeight >   5000)   return    0.07 * COIN;
+    if (nHeight >    1000)  return    0.06 * COIN;
+    if (nHeight >     500)  return    0.8 * COIN;
 
     return 0;
 }
 
 CAmount CMasternode::GetDevPayment(int nHeight)
 {
-    if (nHeight > 3722194) return    0 * COIN;
-    if (nHeight > 3722193) return    2.2 * COIN;
-    if (nHeight > 1000000) return    4 * COIN;
-    if (nHeight >  900000) return    5 * COIN;
-    if (nHeight >  800000) return    8 * COIN;
-    if (nHeight >  700000) return    8 * COIN;
-    if (nHeight >  600000) return    16.5 * COIN;
-    if (nHeight >  500000) return    10.5 * COIN;
-    if (nHeight >  400000) return    4 * COIN;
-    if (nHeight >  300000) return    0.1 * COIN;
-    if (nHeight >  200000) return    0.084 * COIN;
-    if (nHeight >  100000) return    0.06 * COIN;
-    if (nHeight >   5000) return     0.015 * COIN;
-    if (nHeight >    1000) return    0.01 * COIN;
-    if (nHeight >     500) return    0.1 * COIN;
+    if (nHeight >  1600000) return    152 * COIN;
+    if (nHeight >  1500300) return    70 * COIN;
+    if (nHeight >  1500000) return    505 * COIN;
+    if (nHeight >  1400300) return    70 * COIN;
+    if (nHeight >  1400000) return    419.5 * COIN;
+    if (nHeight >  1300300) return    70 * COIN;
+    if (nHeight >  1300000) return    349.5 * COIN;
+    if (nHeight >  1200300) return    70 * COIN;
+    if (nHeight >  1200000) return    291 * COIN;
+    if (nHeight >  1100300) return    70 * COIN;
+    if (nHeight >  1100000) return    242.5 * COIN;
+    if (nHeight >  1000300) return    70 * COIN;
+    if (nHeight >  1000000) return    202 * COIN;
+    if (nHeight >  900300)  return    70 * COIN;
+    if (nHeight >  900000)  return    168 * COIN;
+    if (nHeight >  800300)  return    70 * COIN;
+    if (nHeight >  800000)  return    140 * COIN;
+    if (nHeight >  700300)  return    65 * COIN;
+    if (nHeight >  700000)  return    126.5 * COIN;
+    if (nHeight >  600300)  return    60 * COIN;
+    if (nHeight >  600000)  return    115 * COIN;
+    if (nHeight >  500000)  return    10.5 * COIN;
+    if (nHeight >  400000)  return    4 * COIN;
+    if (nHeight >  300000)  return    0.1 * COIN;
+    if (nHeight >  200000)  return    0.084 * COIN;
+    if (nHeight >  100000)  return    0.06 * COIN;
+    if (nHeight >   5000)   return    0.015 * COIN;
+    if (nHeight >    1000)  return    0.01 * COIN;
+    if (nHeight >     500)  return    0.1 * COIN;
 
     return 0;
 }
